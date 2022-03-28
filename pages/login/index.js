@@ -19,12 +19,13 @@ export default function Home() {
       <main>
       hello world {session?.user?.name}
       <section>
-          <button onClick={() => signIn('github', { callbackUrl: 'http://localhost:3001/admin' })
+          <button onClick={() => signIn('github', { callbackUrl: 'http://localhost:3000/admin' })
   }
 >
 Sign In</button>
           <br />
-          <button onClick={() => signOut()}>Sign Out</button>
+          <button onClick={() => signOut({ callbackUrl: 'http://localhost:3000/' })
+  }>Sign Out</button>
         </section>
       </main>
 

@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
-// import peopleJson from "../libs/people-data";
+
 import Header from "../components/header";
 
 export default function Home() {
@@ -21,16 +21,6 @@ export default function Home() {
     };
 
     getCharacters();
-  }, []);
-
-  useEffect(() => {
-    const getMyData = async () => {
-      // Fetch data from our own API endpoint
-      const data = await fetch("/pages/people");
-      console.log("data from my api>>>", await data.json());
-    };
-
-    getMyData();
   }, []);
 
   console.log("characters", characters);

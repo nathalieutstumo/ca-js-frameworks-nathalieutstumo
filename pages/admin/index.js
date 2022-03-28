@@ -18,7 +18,10 @@ export default function Home() {
       </Header>
 
       <main>
-     
+      <section>
+          <button onClick={() => signOut({ callbackUrl: 'http://localhost:3000/' })
+  }>Sign Out</button>
+        </section>
     <h1>Admin</h1>
       </main>
 
