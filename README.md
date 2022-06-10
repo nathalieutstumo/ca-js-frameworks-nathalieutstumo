@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # JS frameworks course assignment
 
-![image](https://i.postimg.cc/XGPdkVNZ/Skjermbilde-2022-06-10-kl-15-57-18.png)
+![image](https://i.postimg.cc/0jknxQLC/Skjermbilde-2022-06-10-kl-15-57-18.png)
 
 ## Description
 
