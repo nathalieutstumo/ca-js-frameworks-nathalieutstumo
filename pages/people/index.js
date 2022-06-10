@@ -4,6 +4,24 @@ import styles from "../../styles/Home.module.css";
 import peopleJson from "../../libs/people-data";
 
 export default function Home() {
+  const router = useRouter();
+  const [characters, setCharacters] = useState([]);
+
+  const handleOnClick = (id) => {
+    router.push(`/courses/${id}`);
+  };
+
+  useEffect(() => {
+    const getCharacters = async () => {
+      const data = await fetch("https://rickandmortyapi.com/api/character");
+      const json = await data.json();
+      setCharacters(json.results);
+    };
+
+    getCharacters();
+  }, []);
+
+  console.log("characters", characters);
   return (
     <div className={styles.container}>
       <Head>
@@ -16,11 +34,11 @@ export default function Home() {
         <h1 className={styles.title}>People</h1>
 
         <div>
-          <ul>
+          {/* <ul>
             {peopleJson.map((person) => (
               <li key={person.guid}>{person.name}</li>
             ))}
-          </ul>
+          </ul> */}
         </div>
       </main>
 

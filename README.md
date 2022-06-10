@@ -1,5 +1,23 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# JS frameworks course assignment
+
+![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+
+## Description
+
+The project was created for my second year semester project. This assignment is my first project using next.js and is just for displaying information.
+
+## Built With
+
+You can list a the tech stack that you've used over here
+
+- [Next.js](https://nextjs.org/)
+- [React.js](https://reactjs.org)
+- [Formik](https://formik.org/)
+- [NextAuth](https://next-auth.js.org/)
+- [Yup](https://github.com/jquense/yup)
+
 ## Getting Started
 
 First, run the development server:
@@ -12,23 +30,50 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Installing
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Clone the repo:
 
-## Learn More
+```bash
+git clone https://github.com/nathalieutstumo/ca-js-frameworks-nathalieutstumo.git
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install the dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm i next react react-dom
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+npm i formik --save
+```
 
-## Deploy on Vercel
+```
+npm i yup
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Running
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To run the app, run the following commands:
+
+```bash
+npm run start
+```
+
+## Contributing
+
+The project is utilising next.js and global styling in a global.css file. There is no css written other than body and a tags. The folder structure is simple with all pages in a folder with the same name, that can be found in the root of the project, and contains folders for each page on the site. All the page folders contain an index.js file where the main code for that page is found. In the pages/people folder there is also a [id].js file which is used to fetch the id’s from the api. The pages/api folder contains hello.js and a folder called auth. In the pages/api/auth folder there is a […nextauth].js file where the providers for the nextAuth is added.
+
+In the root of the project you will also find a components folder which contains two folders.
+The components/form folder contains a folder called validation with a file called loginSchema.js which is for validation and error messages when logging in. components/form also contains three files. FormLabel.js wich is for the labels in the form. InputField.js wich is for the input fields in the form. And LoginForm.js which is the form itself.
+The components/header folder is the second folder inside components and contains an index.js file which is the code for the header and exports the header component so we can use it in the pages.
+
+## Contact
+
+This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+
+[My Twitter page](www.twitter.com)
+
+[My LinkedIn page](www.linkedin.com)
