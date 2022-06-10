@@ -2,7 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # JS frameworks course assignment
 
-![image](https://ibb.co/Pj24y1s)
+![image](<a href="https://postimg.cc/XGPdkVNZ" target="_blank"><img src="https://i.postimg.cc/XGPdkVNZ/Skjermbilde-2022-06-10-kl-15-57-18.png" alt="Skjermbilde-2022-06-10-kl-15-57-18"/></a><br/><br/>
+)
 
 ## Description
 
